@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.media.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   
    <children>
-      <MediaView fx:id="MenuBackground" fitHeight="480.0" fitWidth="720.0" />
-      <Button layoutY="64.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="200.0" text="Button" />
-      <Button layoutY="133.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" text="Button" />
-      <Button layoutY="188.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" text="Button" />
+      <MediaView fx:id="Mediaview" fitHeight="480.0" fitWidth="720.0" />
+      <Button fx:id="Start1" layoutY="64.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="200.0" text="Play" />
+      <Button fx:id="ShrekButton" layoutY="133.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" text="shrek?" />
+      <Button fx:id="ExitButton" layoutY="188.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" text="Exit" />
    </children>
 </AnchorPane>
