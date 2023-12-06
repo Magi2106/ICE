@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="46.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="Mon1" fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Mon2" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="Mon21" fitHeight="150.0" fitWidth="200.0" layoutX="310.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <HBox prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Move1" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move2" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move3" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move4" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="Move5" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move6" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move7" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+                  <Button fx:id="Move8" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" text="Button" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
