@@ -28,7 +28,7 @@ public class MenuController implements Initializable{
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
-        file = new File("C:\\Users\\Gustav\\Desktop\\Ice\\ICE\\src\\main\\resources\\com\\example\\ice\\DataMonB.mp4");
+        file = new File("MediaFiles/DataMonA.mp4");
         media = new Media(file.toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         MenuBackground.setMediaPlayer(mediaPlayer);
