@@ -7,44 +7,44 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.util.Duration;
 
-
-public class MenuController implements Initializable {
-
-    @FXML
-    private ResourceBundle resources;
+public class MenuController implements Initializable{
 
     @FXML
-    private URL location;
+    private MediaView MenuBackground;
 
     @FXML
-    private Button ExitButton;
-
-    @FXML
-    private Button ShrekButton;
-
-    @FXML
-    private Button Start1;
-
-    @FXML
-    private MediaView mediaView;
+    private Button playButton, pauseButton, resetButton;
 
     private File file;
-    
-    private Menu menu;
     private Media media;
+    private MediaPlayer mediaPlayer;
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
 
         file = new File("C:\\Users\\Gustav\\Desktop\\Ice\\ICE\\src\\main\\resources\\com\\example\\ice\\DataMonB.mp4");
         media = new Media(file.toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
-        mediaView.setMediaPlayer(mediaPlayer);
+        mediaPlayer = new MediaPlayer(media);
+        MenuBackground.setMediaPlayer(mediaPlayer);
+
+    }
+
+
+
+    public void PlayMenu(MouseEvent mouseEvent) {
+
+
+        mediaPlayer.play();
+        mediaPlayer.setRate(1.1);
+        mediaPlayer.setVolume(0.5);
 
     }
 
 }
+
