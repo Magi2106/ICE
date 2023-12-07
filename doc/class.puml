@@ -15,7 +15,7 @@ package "util"{
     }
     class DBConnector{
         + void loadUsers
-        + void createUser(String username, String password)
+        + void createUser(String username, String password, int xp, int level)
         + void login(String username, String password)
 
     }
