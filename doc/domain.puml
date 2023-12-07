@@ -1,23 +1,22 @@
 @startuml
+'https://plantuml.com/object-diagram
 
-object Chill
-object FileIO
+object Mon
 object User
-object Media
-object Movie
-object Series
-object Category
+object Datamon
+object DBConnector
 object TextUI
-object Menus
+object JavaFX
+object Controllers
+object ActualMons
 
-Media <|-- Movie
-Media <|-- Series
-Movie o-- Category
-Series o-- Category
-TextUI o-- Menus
-Chill o-- Media
-Chill o-- FileIO
-Chill o-- User
-Chill o-- TextUI
+Datamon o-- Mon
+Datamon o-- JavaFX
+JavaFX o-- Controllers
+Datamon o-- User
+Datamon o-- TextUI
+Datamon o-- DBConnector
+Mon <|-- ActualMons
+
 
 @enduml
