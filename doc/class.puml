@@ -1,53 +1,91 @@
 @startuml
 'https://plantuml.com/class-diagram
+!pragma layout smetana
 
 class Main{
-    + static void main(String[] args)
+    +static void main(String[] args)
 }
-class Datamon{
-    + void runGame()
+
+class Chill{
+    -TextUI ui
+    -FileIO io
+    +List<Series> seriesList
+    +List<Movie> movieList
+    -User currentUser
+    +saveMedia(Media m)
+    +watchMedia(Media m)
+    +removeMedia(Media m)
+    -searchByName(String query)
+    -searchByRating(double rating)
+    -searchByCategory(String category)
 }
 
 package "util"{
+    Interface IO{
+        -Scanner scanner
+    }
+
+    class FileIO implements IO{
+        +ArrayList<User> users
+        +List<Media> loadList()
+        +List<Media> loadMovies()
+        +List<Media> loadSeries()
+        +List<String> loadUserMedia(User u)
+        +List<Users> loadUsers()
+        +User Login(username, password)
+        +void createUser(String username,String password, int age)
+
+    }
+
     class TextUI{
-        + void displayMessage(String msg)
-        + void getInput (String msg)
-    }
-    class DBConnector{
-        + void loadUsers
-        + void createUser(String username, String password)
-        + void login(String username, String password)
-
-    }
-}
-package "model" {
-    class user{
-
-    }
-    interface Mon{
-
-    }
-    class ActualMons implements Mon{
-
+        -Scanner scanner
+        +String displayMessage(String msg)
+        -displayWatchedMedia(ArrayList<Media>)
+        -displaySavedMedia(ArrayList<Media>)
     }
 }
 
-package "JavaFX"{
-    class Controllers
+package "model"{
+    abstract class Media{
+        -String title
+        -double rating
+        -ArrayList<String> categories
+        +Media(String title,double rating,ArrayList<String> categories)
+        +getTitle()
+        +getRating()
+        +getCategories()
+    }
+
+    class Movie extends Media{
+        -int year
+        +Movie(String title,double rating,ArrayList<String> categories,int year)
+    }
+
+    class Series extends Media{
+        -int startYear
+        -int endYear
+        -ArrayList<String> seasonsAndEpisodes
+        +Series(String title,double rating,ArrayList<String> categories,int startYear,int endYear,ArrayList<String> seasonsAndEpisodes)
+    }
+
+    class User{
+        -String username
+        -String password
+        -int age
+        +ArrayList<Media> savedMedia
+        +ArrayList<Media> watchedMedia
+        +User(String username,String password,int age)
+    }
+    class Shrek {
+    Shrek();
+    }
 }
 
-Main *-- Datamon
-Datamon *-- Mon
-Datamon *-- TextUI
-Datamon *-- DBConnector
-Datamon *-- user
-Datamon *-- Controllers
-
-
-
-
-
-
+Main *-- Chill
+Chill *-- TextUI
+Chill *-- User
+Chill *-- Media
+Chill *-- IO
 
 
 @enduml
