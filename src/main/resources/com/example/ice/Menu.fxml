@@ -13,7 +13,7 @@
          <font>
             <Font name="Impact" size="36.0" />
          </font></Button>
-      <Button fx:id="ShrekButton" layoutX="877.0" layoutY="806.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" style="-fx-background-color: #408861;" text="shrek?" textFill="#fed269">
+      <Button fx:id="ShrekButton" layoutX="877.0" layoutY="806.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" style="-fx-background-color: #408861;" text="Create User" textFill="#fed269">
          <font>
             <Font name="Impact" size="17.0" />
          </font></Button>
@@ -21,5 +21,7 @@
          <font>
             <Font name="Impact" size="16.0" />
          </font></Button>
+      <PasswordField layoutX="750.0" layoutY="668.0" prefHeight="40.0" prefWidth="400.0" />
+      <TextField layoutX="748.0" layoutY="604.0" prefHeight="40.0" prefWidth="400.0" />
    </children>
 </AnchorPane>

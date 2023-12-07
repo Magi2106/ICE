@@ -12,36 +12,12 @@
                <children>
                   <FlowPane prefHeight="200.0" prefWidth="600.0">
                      <children>
-                        <Button fx:id="Select1" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon1" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select2" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon2" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select3" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon3" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select4" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon4" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select5" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon5" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select6" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon6" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
+                        <Button fx:id="Select1" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="Select2" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="Select3" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="Select4" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="Select5" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
+                        <Button fx:id="Select6" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" />
                      </children>
                   </FlowPane>
                </children>
