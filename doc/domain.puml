@@ -19,5 +19,4 @@ Datamon o-- TextUI
 Datamon o-- DBConnector
 Mon <|-- ActualMons
 
-
 @enduml

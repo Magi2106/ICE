@@ -37,12 +37,12 @@ package "JavaFX"{
     class Controllers
 }
 
-Main *-- Datamon
-Datamon *-- Mon
-Datamon *-- TextUI
-Datamon *-- DBConnector
-Datamon *-- user
-Datamon *-- Controllers
+Main -- Datamon
+Datamon-- Mon
+Datamon -- TextUI
+Datamon-- DBConnector
+Datamon -- user
+Datamon-- Controllers
 
 
 
