@@ -13,7 +13,6 @@ public class Kevin implements Datamon{
         this.CreatureType = "Ginger";
     }
 
-
     @Override
     public String getName() {
         return name;

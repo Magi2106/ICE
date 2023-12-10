@@ -11,11 +11,11 @@ import java.io.IOException;
 public class Main extends Application {
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Menu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Selector2.fxml"));
         Pane root = fxmlLoader.load();
         Scene scene = new Scene(root);
         primaryStage.setTitle("Datamon.exe");

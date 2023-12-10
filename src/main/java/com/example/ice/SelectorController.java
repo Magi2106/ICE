@@ -1,69 +1,120 @@
 package com.example.ice;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.function.Consumer;
+
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 public class SelectorController {
-
-
     @FXML
     private ResourceBundle resources;
-
     @FXML
     private URL location;
-
     @FXML
-    private ImageView Mon1;
-
+    private ImageView Mon1, Mon2, Mon3, Mon4, Mon5, Mon6;
     @FXML
-    private ImageView Mon2;
+    private Button Select1, Select2, Select3, Select4, Select5, Select6;
+    private final List<Datamon> datamons = new ArrayList<>();
+    private User currentUser = new User("Magnus", "", datamons);
 
-    @FXML
-    private ImageView Mon3;
-
-    @FXML
-    private Button Select1;
-
-    @FXML
-    private Button Select2;
-
-    @FXML
-    private Button Select3;
-
-    @FXML
-    private Button Select4;
-
-    @FXML
-    private Button Select5;
-
-    @FXML
-    private Button Select6;
-
-    @FXML
-    private ImageView Mon4;
-
-    @FXML
-    private ImageView Mon5;
-
-    @FXML
-    private ImageView Mon6;
-
+    //TODO: Fix assigned userObject.
     @FXML
     void initialize() {
-        assert Mon1 != null : "fx:id=\"Mon1\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Mon2 != null : "fx:id=\"Mon2\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Mon3 != null : "fx:id=\"Mon3\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select1 != null : "fx:id=\"Select1\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select2 != null : "fx:id=\"Select2\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select3 != null : "fx:id=\"Select3\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select4 != null : "fx:id=\"Select4\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select5 != null : "fx:id=\"Select5\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Select6 != null : "fx:id=\"Select6\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Mon4 != null : "fx:id=\"Mon4\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Mon5 != null : "fx:id=\"Mon5\" was not injected: check your FXML file 'Selector.fxml'.";
-        assert Mon6 != null : "fx:id=\"Mon6\" was not injected: check your FXML file 'Selector.fxml'.";
 
     }
+
+    // Assigns the player datamon(s) according to buttons pressed.
+    // Returns list of datamons to the BattleSimController.
+    public List<Datamon> giveUserDatamons(Datamon datamon) {
+        datamons.add(datamon);
+
+        return datamons;
+    }
+
+
+    @FXML
+    private void Select1Pressed(ActionEvent event) {
+        Fred2 datamon = new Fred2();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+        }
+
+        System.out.println("Already contains " + datamon.getName() + ".");
+
+    }
+
+    @FXML
+    private void  Select2Pressed(ActionEvent event) {
+        RouvisMor datamon = new RouvisMor();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+
+        }
+
+    }
+    @FXML
+    private void Select3Pressed(ActionEvent event) {
+        //TODO: Fix assigned datamon.
+        Fred2 datamon = new Fred2();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+        }
+
+        System.out.println("Already contains " + datamon.getName() + ".");
+
+    }
+    @FXML
+    private void  Select4Pressed(ActionEvent event) {
+        //TODO: Fix assigned datamon.
+        Fred2 datamon = new Fred2();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+        }
+
+        System.out.println("Already contains " + datamon.getName() + ".");
+
+    }
+    @FXML
+    private void Select5Pressed(ActionEvent event) {
+        //TODO: Fix assigned datamon.
+        Fred2 datamon = new Fred2();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+        }
+
+        System.out.println("Already contains " + datamon.getName() + ".");
+
+    }
+    @FXML
+    private void Select6Pressed(ActionEvent event) {
+        //TODO: Fix assigned datamon.
+        Fred2 datamon = new Fred2();
+
+        if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
+            giveUserDatamons(datamon);
+            System.out.println(datamon.getName() + " added.");
+        }
+
+        System.out.println("Already contains " + datamon.getName() + ".");
+
+    }
+
+
+
 }

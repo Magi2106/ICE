@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User {
-    private String username;
-    private String password;
+    private final String username;
+    private final String password;
     private int xp;
+    private List<Datamon> datamons = new ArrayList<>();
 
+    public User(String username, String password, List datamons) {
+        this.username = username;
+        this.password = password;
+        this.datamons = datamons;
+
+    }
+    public List<Datamon> getDatamons() {
+        return datamons;
+    }
     public String getUsername() {
         return username;
     }
@@ -18,9 +28,5 @@ public class User {
 
 
 
-    public User(String username, String password, int age, List<String> watchedMedia, List<String> savedMedia) {
-        this.username = username;
-        this.password = password;
 
-    }
 }
