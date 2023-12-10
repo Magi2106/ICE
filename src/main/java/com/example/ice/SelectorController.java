@@ -40,80 +40,72 @@ public class SelectorController {
 
     @FXML
     private void Select1Pressed(ActionEvent event) {
-        Fred2 datamon = new Fred2();
+        Datamon datamon = new Fred2();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
-            System.out.println(datamon.getName() + " added.");
+            System.out.println(datamon.getName() + " datamon added.");
         }
-
-        System.out.println("Already contains " + datamon.getName() + ".");
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
 
     @FXML
     private void  Select2Pressed(ActionEvent event) {
-        RouvisMor datamon = new RouvisMor();
+        Datamon datamon = new RouvisMor();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
-            System.out.println(datamon.getName() + " added.");
-
+            System.out.println(datamon.getName() + " datamon added.");
         }
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
+
     @FXML
     private void Select3Pressed(ActionEvent event) {
-        //TODO: Fix assigned datamon.
-        Fred2 datamon = new Fred2();
+       Datamon datamon = new Jonas();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
-            System.out.println(datamon.getName() + " added.");
+            System.out.println(datamon.getName() + " datamon added.");
         }
-
-        System.out.println("Already contains " + datamon.getName() + ".");
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
+
     @FXML
     private void  Select4Pressed(ActionEvent event) {
-        //TODO: Fix assigned datamon.
-        Fred2 datamon = new Fred2();
+        Datamon datamon = new Kevin();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
-            System.out.println(datamon.getName() + " added.");
+            System.out.println(datamon.getName() + " datamon added.");
         }
-
-        System.out.println("Already contains " + datamon.getName() + ".");
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
+
     @FXML
     private void Select5Pressed(ActionEvent event) {
         //TODO: Fix assigned datamon.
-        Fred2 datamon = new Fred2();
+       Datamon datamon = new Fred2();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
-            System.out.println(datamon.getName() + " added.");
+            System.out.println(datamon.getName() + " datamon added.");
         }
-
-        System.out.println("Already contains " + datamon.getName() + ".");
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
     @FXML
     private void Select6Pressed(ActionEvent event) {
         //TODO: Fix assigned datamon.
-        Fred2 datamon = new Fred2();
+        Datamon datamon = new Fred2();
 
         if(!datamons.contains(datamon.getName()) && datamons.size() < 6) {
             giveUserDatamons(datamon);
             System.out.println(datamon.getName() + " added.");
         }
-
-        System.out.println("Already contains " + datamon.getName() + ".");
-
+        System.out.println("Already contains datamon" + datamon.getName() + " object.");
     }
+
+
 
 
 
