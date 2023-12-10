@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ice.SelectorController">
+    <children>
+        <BorderPane prefHeight="400.0" prefWidth="600.0">
+            <bottom>
+                <AnchorPane prefHeight="200.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <FlowPane prefHeight="200.0" prefWidth="600.0">
+                            <children>
+                                <Button fx:id="Select1" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button1" onAction="#Select1Pressed"/>
+                                <Button fx:id="Select2" mnemonicParsing="false"  prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#Select2Pressed"/>
+                                <Button fx:id="Select3" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#Select3Pressed"/>
+                                <Button fx:id="Select4" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#Select4Pressed"/>
+                                <Button fx:id="Select5" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#Select5Pressed"/>
+                                <Button fx:id="Select6" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#Select6Pressed"/>
+                                <Button fx:id="Battle" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button" onAction="#BattleButtonPressed"/>
+                            </children>
+                        </FlowPane>
+                    </children>
+                </AnchorPane>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>
