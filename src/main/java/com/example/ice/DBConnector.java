@@ -6,12 +6,15 @@ import java.io.FileReader;
 import java.sql.*;
 import java.util.*;
 public class DBConnector{
+
     // database URL
-    static final String DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net/user";
+    static final String DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11669270";
 
     //  Database credentials
     static final String USER = "sql11669270";
     static final String PASS = "HreeKmVJuh";
+
+    //Login i program med Username: "hej", Password: "lol".
 
 
     public List<User> loadUsers() throws FileNotFoundException {
@@ -24,8 +27,10 @@ public class DBConnector{
             while (resultSet.next()) {
                 String username = resultSet.getString("username");
                 String password = resultSet.getString("password");
+                 /*
                  int xp = resultSet.getInt("xp");
                  int level = resultSet.getInt("level");
+                  */
                 List<Datamon> list = null;
 
                 users.add(new User(username,password, list));
@@ -50,8 +55,11 @@ public class DBConnector{
                 // Set parameters based on your CSV file columns and data types
                 preparedStatement.setString(1,username);
                 preparedStatement.setString(2,password);
+                /*
                 preparedStatement.setInt(3,0);
                 preparedStatement.setInt(4,1);
+
+                 */
 
                 preparedStatement.executeUpdate();
 
