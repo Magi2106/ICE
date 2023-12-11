@@ -1,13 +1,15 @@
-package com.example.ice;
+package com.example.ice.Datamons;
 
-public class Jonas implements Datamon{
+import com.example.ice.Datamon;
+
+public class Jonas implements Datamon {
 private String name;
 private int hp;
 private int BaseDamage;
 private String CreatureType;
 
 
-    Jonas(){
+    public Jonas(){
         this.name = "Jonas";
         this.hp = 50;
         this.BaseDamage = 3;
@@ -40,13 +42,8 @@ private String CreatureType;
     }
 
     @Override
-    public int Damagebuff(Datamon target) {
-     return 0;
-    }
-
-    @Override
-    public int takedamage(int damage) {
-        return hp-= damage;
+    public int DamageBuff(Datamon target) {
+     return BaseDamage;
     }
 
     @Override

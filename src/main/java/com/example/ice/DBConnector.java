@@ -33,7 +33,7 @@ public class DBConnector{
                   */
                 List<Datamon> list = null;
 
-                users.add(new User(username,password, list));
+                users.add(new User(username,password));
 
             }
         } catch (SQLException e) {

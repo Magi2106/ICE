@@ -1,12 +1,14 @@
-package com.example.ice;
+package com.example.ice.Datamons;
 
-public class Kevin implements Datamon{
+import com.example.ice.Datamon;
+
+public class Kevin implements Datamon {
     private String name;
     private int hp;
     private int BaseDamage;
     private String CreatureType;
 
-    Kevin(){
+    public Kevin(){
         this.name = "Kevin";
         this.hp = 100;
         this.BaseDamage = 5;
@@ -39,17 +41,12 @@ public class Kevin implements Datamon{
     }
 
     @Override
-    public int Damagebuff(Datamon target) {
+    public int DamageBuff(Datamon target) {
         if("Milf".equals(target.getCreatureType())){
-            return getBaseDamage() -4;
+            return getBaseDamage() - 4;
         } else {
             return getBaseDamage();
         }
-    }
-
-    @Override
-    public int takedamage(int damage) {
-        return hp-= damage;
     }
 
     @Override

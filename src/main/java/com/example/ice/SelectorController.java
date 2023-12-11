@@ -4,15 +4,17 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
+import com.example.ice.Datamons.Fred2;
+import com.example.ice.Datamons.Jonas;
+import com.example.ice.Datamons.Kevin;
+import com.example.ice.Datamons.RouvisMor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 public class SelectorController {
     @FXML
@@ -29,8 +31,8 @@ public class SelectorController {
     // Assigns the player datamon(s) according to buttons pressed.
     // Returns list of datamons to the BattleSimController.
     public void giveUserDatamons(Datamon datamon) {
-        datamons.add(datamon);
-        for(Datamon data : datamons) {
+        currentUser.addDatamon(datamon);
+        for(Datamon data : currentUser.getDatamons()) {
             System.out.println(data.getName());
 
         }
@@ -40,8 +42,8 @@ public class SelectorController {
     private void Select1Pressed(ActionEvent event) {
         Datamon datamon = new Fred2();
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -53,8 +55,8 @@ public class SelectorController {
     private void  Select2Pressed(ActionEvent event) {
         Datamon datamon = new RouvisMor();
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -66,8 +68,8 @@ public class SelectorController {
     private void Select3Pressed(ActionEvent event) {
        Datamon datamon = new Jonas();
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -79,8 +81,8 @@ public class SelectorController {
     private void  Select4Pressed(ActionEvent event) {
         Datamon datamon = new Kevin();
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -94,8 +96,8 @@ public class SelectorController {
        Datamon datamon = new Fred2();
 
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -107,8 +109,8 @@ public class SelectorController {
         //TODO: Fix assigned datamon.
         Datamon datamon = new Fred2();
 
-        if (datamons.size() < 6) {
-            datamons.add(datamon);
+        if (currentUser.getDatamons().size() < 6) {
+            currentUser.addDatamon(datamon);
             System.out.println(datamon.getName() + " datamon added.");
 
         } else {
@@ -118,7 +120,7 @@ public class SelectorController {
 
     @FXML
     private void BattleButtonPressed(ActionEvent event) {
-        if (datamons.size() > 0) {
+        if (currentUser.getDatamons().size() > 0) {
             ((Node)(event.getSource())).getScene().getWindow().hide();
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("BattleSim.fxml"));
