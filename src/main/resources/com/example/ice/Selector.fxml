@@ -18,7 +18,7 @@
                            <effect>
                               <ImageInput>
                                  <source>
-                                    <Image url="file:/C:/Users/Gustav/Desktop/Ice/ICE/MediaFiles/Bobby.png" />
+                                    <Image url="file:MediaFiles/Bobby.png" />
                                  </source></ImageInput>
                            </effect></Button>
                         <Button fx:id="Mon2" mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="2">
