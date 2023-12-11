@@ -121,6 +121,8 @@ public class SelectorController {
     @FXML
     private void BattleButtonPressed(ActionEvent event) {
         if (currentUser.getDatamons().size() > 0) {
+            //TODO Gør det her på en anden måde. Vi skal nok først lave liste inde i battleSim.
+            //List<Datamon> exportList = currentUser.getDatamons();
             ((Node)(event.getSource())).getScene().getWindow().hide();
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("BattleSim.fxml"));

@@ -13,7 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 
 public class BattleSimController {
-    SelectorController sc = new SelectorController();
     DBConnector db = new DBConnector();
     Kevin kevin = new Kevin();
     Jonas jonas = new Jonas();
