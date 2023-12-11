@@ -1,0 +1,131 @@
+Index: src/main/java/com/example/ice/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.ice;\r\n\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.layout.Pane;\r\nimport javafx.stage.Stage;\r\n\r\nimport java.io.IOException;\r\n\r\npublic class Main extends Application {\r\n\r\n    public static void main(String[] args) {\r\n        launch();\r\n    }\r\n\r\n    public void start(Stage primaryStage) throws IOException {\r\n        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(\"Selector.fxml\"));\r\n        Pane root = fxmlLoader.load();\r\n        Scene scene = new Scene(root);\r\n        primaryStage.setTitle(\"Datamon.exe\");\r\n        primaryStage.setScene(scene);\r\n        primaryStage.show();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/ice/Main.java b/src/main/java/com/example/ice/Main.java
+--- a/src/main/java/com/example/ice/Main.java	(revision dc74b74577fe119118db0824449ba0bb5098f09a)
++++ b/src/main/java/com/example/ice/Main.java	(date 1701945506636)
+@@ -15,7 +15,7 @@
+     }
+ 
+     public void start(Stage primaryStage) throws IOException {
+-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Selector.fxml"));
++        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Menu.fxml"));
+         Pane root = fxmlLoader.load();
+         Scene scene = new Scene(root);
+         primaryStage.setTitle("Datamon.exe");
+Index: src/main/resources/com/example/ice/Menu.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.media.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"1080.0\" prefWidth=\"1920.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.ice.MenuController\">\r\n   \r\n   <children>\r\n      <MediaView fx:id=\"MenuBackground\" fitHeight=\"1080.0\" fitWidth=\"1920.0\" onMouseEntered=\"#PlayMenu\" />\r\n      <Button fx:id=\"PlayButton\" layoutX=\"835.0\" layoutY=\"719.0\" mnemonicParsing=\"false\" prefHeight=\"75.0\" prefWidth=\"250.0\" style=\"-fx-background-color: #408861;\" text=\"Play\" textFill=\"#fed269\">\r\n         <font>\r\n            <Font name=\"Impact\" size=\"36.0\" />\r\n         </font></Button>\r\n      <Button fx:id=\"ShrekButton\" layoutX=\"877.0\" layoutY=\"806.0\" mnemonicParsing=\"false\" prefHeight=\"40.0\" prefWidth=\"167.0\" style=\"-fx-background-color: #408861;\" text=\"Create User\" textFill=\"#fed269\">\r\n         <font>\r\n            <Font name=\"Impact\" size=\"17.0\" />\r\n         </font></Button>\r\n      <Button fx:id=\"ExitButton\" layoutX=\"889.0\" layoutY=\"859.0\" mnemonicParsing=\"false\" prefHeight=\"32.0\" prefWidth=\"142.0\" style=\"-fx-background-color: #408861;\" text=\"Exit\" textFill=\"#fed269\">\r\n         <font>\r\n            <Font name=\"Impact\" size=\"16.0\" />\r\n         </font></Button>\r\n      <PasswordField layoutX=\"750.0\" layoutY=\"668.0\" prefHeight=\"40.0\" prefWidth=\"400.0\" />\r\n      <TextField layoutX=\"748.0\" layoutY=\"604.0\" prefHeight=\"40.0\" prefWidth=\"400.0\" />\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/ice/Menu.fxml b/src/main/resources/com/example/ice/Menu.fxml
+--- a/src/main/resources/com/example/ice/Menu.fxml	(revision dc74b74577fe119118db0824449ba0bb5098f09a)
++++ b/src/main/resources/com/example/ice/Menu.fxml	(date 1701945495093)
+@@ -1,6 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+ <?import javafx.scene.control.*?>
++<?import javafx.scene.effect.*?>
++<?import javafx.scene.image.*?>
+ <?import javafx.scene.layout.*?>
+ <?import javafx.scene.media.*?>
+ <?import javafx.scene.text.*?>
+@@ -9,15 +11,22 @@
+    
+    <children>
+       <MediaView fx:id="MenuBackground" fitHeight="1080.0" fitWidth="1920.0" onMouseEntered="#PlayMenu" />
+-      <Button fx:id="PlayButton" layoutX="835.0" layoutY="719.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: #408861;" text="Play" textFill="#fed269">
++      <Button fx:id="PlayButton" layoutX="750.0" layoutY="719.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #408861;" text="Play" textFill="#fed269">
+          <font>
+             <Font name="Impact" size="36.0" />
+-         </font></Button>
+-      <Button fx:id="ShrekButton" layoutX="877.0" layoutY="806.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" style="-fx-background-color: #408861;" text="Create User" textFill="#fed269">
++         </font>
++         <effect>
++            <ImageInput>
++               <source>
++                  <Image url="file:/C:/Users/Gustav/Desktop/Ice/ICE/MediaFiles/Play.png" />
++               </source>
++            </ImageInput>
++         </effect></Button>
++      <Button fx:id="ShrekButton" layoutX="794.0" layoutY="841.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: #408861;" text="Create User" textFill="#fed269">
+          <font>
+             <Font name="Impact" size="17.0" />
+          </font></Button>
+-      <Button fx:id="ExitButton" layoutX="889.0" layoutY="859.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: #408861;" text="Exit" textFill="#fed269">
++      <Button fx:id="ExitButton" layoutX="851.0" layoutY="894.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #408861;" text="Exit" textFill="#fed269">
+          <font>
+             <Font name="Impact" size="16.0" />
+          </font></Button>
+Index: src/main/java/com/example/ice/MenuController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.ice;\r\n\r\nimport java.io.File;\r\nimport java.net.URL;\r\nimport java.util.ResourceBundle;\r\nimport javafx.fxml.FXML;\r\nimport javafx.fxml.Initializable;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.control.Menu;\r\nimport javafx.scene.input.MouseEvent;\r\nimport javafx.scene.media.Media;\r\nimport javafx.scene.media.MediaPlayer;\r\nimport javafx.scene.media.MediaView;\r\nimport javafx.util.Duration;\r\n\r\npublic class MenuController implements Initializable{\r\n\r\n    @FXML\r\n    private MediaView MenuBackground;\r\n\r\n    @FXML\r\n    private Button playButton, pauseButton, resetButton;\r\n\r\n    private File file;\r\n    private Media media;\r\n    private MediaPlayer mediaPlayer;\r\n\r\n    @Override\r\n    public void initialize(URL arg0, ResourceBundle arg1) {\r\n\r\n        file = new File(\"MediaFiles/DataMonA.mp4\");\r\n        media = new Media(file.toURI().toString());\r\n        mediaPlayer = new MediaPlayer(media);\r\n        MenuBackground.setMediaPlayer(mediaPlayer);\r\n\r\n    }\r\n\r\n\r\n\r\n    public void PlayMenu(MouseEvent mouseEvent) {\r\n\r\n\r\n        mediaPlayer.play();\r\n        mediaPlayer.setRate(1.1);\r\n        mediaPlayer.setVolume(0.5);\r\n\r\n    }\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/ice/MenuController.java b/src/main/java/com/example/ice/MenuController.java
+--- a/src/main/java/com/example/ice/MenuController.java	(revision dc74b74577fe119118db0824449ba0bb5098f09a)
++++ b/src/main/java/com/example/ice/MenuController.java	(date 1702084799138)
+@@ -28,7 +28,7 @@
+     @Override
+     public void initialize(URL arg0, ResourceBundle arg1) {
+ 
+-        file = new File("MediaFiles/DataMonA.mp4");
++        file = new File("MediaFiles/DataMonB.mp4");
+         media = new Media(file.toURI().toString());
+         mediaPlayer = new MediaPlayer(media);
+         MenuBackground.setMediaPlayer(mediaPlayer);
+Index: Doc/Domain.puml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@startuml\r\n'https://plantuml.com/object-diagram\r\n!pragma layout smetana\r\n\r\nobject Mon\r\nobject User\r\nobject Datamon\r\nobject DBConnector\r\nobject TextUI\r\nobject JavaFX\r\nobject Controllers\r\nobject ActualMons\r\n\r\nDatamon o-- Mon\r\nDatamon o-- JavaFX\r\nJavaFX o-- Controllers\r\nDatamon o-- User\r\nDatamon o-- TextUI\r\nDatamon o-- DBConnector\r\nMon <|-- ActualMons\r\n\r\n@enduml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Doc/Domain.puml b/Doc/Domain.puml
+--- a/Doc/Domain.puml	(revision dc74b74577fe119118db0824449ba0bb5098f09a)
++++ b/Doc/Domain.puml	(date 1701943946500)
+@@ -19,4 +19,5 @@
+ Datamon o-- DBConnector
+ Mon <|-- ActualMons
+ 
+-@enduml
+\ No newline at end of file
++
++@enduml
+Index: Doc/Class.puml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@startuml\r\n'https://plantuml.com/class-diagram\r\n!pragma layout smetana\r\n\r\nclass Main{\r\n    + static void main(String[] args)\r\n}\r\nclass Datamon{\r\n    + void runGame()\r\n}\r\n\r\npackage \"util\"{\r\n    class TextUI{\r\n        + void displayMessage(String msg)\r\n        + void getInput (String msg)\r\n    }\r\n    class DBConnector{\r\n        + void loadUsers\r\n        + void createUser(String username, String password)\r\n        + void login(String username, String password)\r\n\r\n    }\r\n}\r\npackage \"model\" {\r\n    class user{\r\n\r\n    }\r\n    interface Mon{\r\n\r\n    }\r\n    class ActualMons implements Mon{\r\n\r\n    }\r\n}\r\n\r\npackage \"JavaFX\"{\r\n    class Controllers\r\n}\r\n\r\nMain -- Datamon\r\nDatamon-- Mon\r\nDatamon -- TextUI\r\nDatamon-- DBConnector\r\nDatamon -- user\r\nDatamon-- Controllers\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n@enduml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Doc/Class.puml b/Doc/Class.puml
+--- a/Doc/Class.puml	(revision dc74b74577fe119118db0824449ba0bb5098f09a)
++++ b/Doc/Class.puml	(date 1701943946499)
+@@ -37,12 +37,12 @@
+     class Controllers
+ }
+ 
+-Main -- Datamon
+-Datamon-- Mon
+-Datamon -- TextUI
+-Datamon-- DBConnector
+-Datamon -- user
+-Datamon-- Controllers
++Main *-- Datamon
++Datamon *-- Mon
++Datamon *-- TextUI
++Datamon *-- DBConnector
++Datamon *-- user
++Datamon *-- Controllers
+ 
+ 
+ 
