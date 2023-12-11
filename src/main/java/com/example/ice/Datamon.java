@@ -6,8 +6,7 @@ public interface Datamon {
     public void setHP(int hp);
     public int getBaseDamage();
     public String getCreatureType();
-    public int Damagebuff(Datamon target);
-    public  int takedamage(int damage);
+    public int DamageBuff(Datamon target);
     public String introduction();
 
 
