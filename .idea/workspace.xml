@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f774f39f-9bb8-4bf9-bc1c-70bb4423a81e" name="Changes" comment="Removed test class and FXML file.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/BattleSimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/BattleSimController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/DBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Fred2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Fred2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Jonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Jonas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Kevin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Kevin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/RouvisMor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/RouvisMor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/SelectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/SelectorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="f774f39f-9bb8-4bf9-bc1c-70bb4423a81e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "småRettelser",
+    "git-widget-placeholder": "fix",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/mag/Library/Mobile Documents/com~apple~CloudDocs/ICE",
@@ -259,6 +246,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed test class and FXML file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed test class and FXML file." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
