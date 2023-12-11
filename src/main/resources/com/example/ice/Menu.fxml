@@ -21,7 +21,7 @@
          <font>
             <Font name="Impact" size="16.0" />
          </font></Button>
-      <PasswordField layoutX="750.0" layoutY="668.0" prefHeight="40.0" prefWidth="400.0" />
-      <TextField layoutX="748.0" layoutY="604.0" prefHeight="40.0" prefWidth="400.0" />
+      <PasswordField fx:id="passwordField" layoutX="750.0" layoutY="668.0" prefHeight="40.0" prefWidth="400.0" />
+      <TextField fx:id="usernameField" layoutX="748.0" layoutY="604.0" prefHeight="40.0" prefWidth="400.0" />
    </children>
 </AnchorPane>
