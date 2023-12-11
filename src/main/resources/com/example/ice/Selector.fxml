@@ -1,61 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane prefHeight="400.0" prefWidth="600.0">
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
          <bottom>
-            <AnchorPane prefHeight="200.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="600.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
                <children>
-                  <FlowPane prefHeight="200.0" prefWidth="600.0">
+                  <FlowPane prefHeight="600.0" prefWidth="1920.0">
                      <children>
-                        <Button fx:id="Select1" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon1" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select2" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon2" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select3" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon3" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select4" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon4" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select5" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon5" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="Select6" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Button">
-                           <graphic>
-                              <ImageView fx:id="Mon6" fitHeight="81.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-                           </graphic>
-                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
+                        <Button mnemonicParsing="false" prefHeight="200.0" prefWidth="480.0" text="Button" />
                      </children>
                   </FlowPane>
                </children>
             </AnchorPane>
          </bottom>
          <top>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fx:id="SelectedMon1" fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fx:id="SelectedMon2" fitHeight="200.0" fitWidth="300.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true" />
-               </children>
-            </AnchorPane>
+            <AnchorPane prefHeight="119.0" prefWidth="1920.0" BorderPane.alignment="CENTER" />
          </top>
       </BorderPane>
-      <ImageView fx:id="BackGround2" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" />
+      <MediaView fitHeight="1080.0" fitWidth="1920.0" />
    </children>
 </AnchorPane>
