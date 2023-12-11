@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="@sql11.freemysqlhosting.net" uuid="91e38d41-a853-4074-b73d-47810e1c54f9">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://sql11.freemysqlhosting.net:3306/</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
