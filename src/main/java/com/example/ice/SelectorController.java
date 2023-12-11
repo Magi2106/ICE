@@ -22,7 +22,7 @@ public class SelectorController {
     @FXML
     private ImageView Mon1, Mon2, Mon3, Mon4, Mon5, Mon6;
     private List<Datamon> datamons = new ArrayList<>();
-    private User currentUser = new User("Magnus", "", datamons);  //TODO: Replace when class is functional.
+    private User currentUser = new User("Magnus", "");  //TODO: Replace when class is functional.
     //private User currentUser = MenuController.currentUser;                         //TODO: Remove comments from User.
 
 
