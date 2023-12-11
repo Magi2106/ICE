@@ -18,6 +18,10 @@ public class User {
     public List<Datamon> getDatamons() {
         return datamons;
     }
+
+    public void addDatamon(Datamon mon){
+        datamons.add(mon);
+    }
     public String getUsername() {
         return username;
     }
