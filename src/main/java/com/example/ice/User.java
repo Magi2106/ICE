@@ -9,10 +9,10 @@ public class User {
     private int xp;
     private List<Datamon> datamons = new ArrayList<>();
 
-    public User(String username, String password, List datamons) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.datamons = datamons;
+
 
     }
     public List<Datamon> getDatamons() {
