@@ -72,6 +72,34 @@ public class MenuController implements Initializable {
             showErrorDialog("Error4", "An unexpected error occured: " + e.getMessage());
         }
     }
+    @FXML
+    private void registerPressed(ActionEvent event) {
+        try {
+            io.createUser(usernameField.getText(), passwordField.getText());
+
+            if (currentUser != null) {
+
+                Platform.runLater(() -> {
+
+                    try {
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("Selector.fxml"));
+                        Parent root = loader.load();
+                        userChoices.setScene(new Scene(root));
+                        userChoices.show();
+
+                    } catch (IOException e) {
+                        showErrorDialog("Error1", "An error occurred while loading the next screen.");
+                    }
+                });
+
+            } else {
+                showErrorDialog("Register Success!", "You can now proceed to login!");
+            }
+        } catch (Exception e) {
+            showErrorDialog("Error3", "An unexpected error occured: " + e.getMessage());
+        }
+    }
+
     private void showErrorDialog(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
