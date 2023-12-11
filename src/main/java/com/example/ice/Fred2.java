@@ -1,11 +1,9 @@
 package com.example.ice;
 
-import java.util.Objects;
-
 public class Fred2 implements Datamon{
 
     private String name;
-    private int hp;
+    private double hp;
     private int BaseDamage;
     private String CreatureType;
 
@@ -16,14 +14,13 @@ public class Fred2 implements Datamon{
         this.CreatureType = "Drunk";
     }
 
-
     @Override
     public String getName() {
         return name;
     }
 
     @Override
-    public int getHP() {
+    public double getHP() {
         return hp;
     }
 
@@ -33,7 +30,7 @@ public class Fred2 implements Datamon{
     }
 
     @Override
-    public int getBaseDamage() {
+    public double getBaseDamage() {
         return BaseDamage;
     }
 
@@ -43,12 +40,12 @@ public class Fred2 implements Datamon{
     }
 
     @Override
-    public int Damagebuff(Datamon target) {
+    public double Damagebuff(Datamon target) {
         return 0;
     }
 
     @Override
-    public int takedamage(int damage) {
+    public double takedamage(double damage) {
         return hp-= damage;
     }
 
@@ -57,5 +54,9 @@ public class Fred2 implements Datamon{
         return  "";
     }
 
+    public void oelKastMedFar(Datamon target){
+        double damageDealt = 1.5*getBaseDamage();
+        target.takedamage(damageDealt);
+    }
 
 }
