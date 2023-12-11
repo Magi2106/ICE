@@ -1,19 +1,19 @@
-package com.example.ice;
+package com.example.ice.Datamons;
 
-import java.util.Objects;
+import com.example.ice.Datamon;
 
-public class Fred2 implements Datamon{
+public class RouvisMor implements Datamon {
 
     private String name;
     private int hp;
     private int BaseDamage;
     private String CreatureType;
 
-    Fred2(){
-        this.name = "Fred2";
-        this.hp = 250;
-        this.BaseDamage = 7;
-        this.CreatureType = "Drunk";
+    public RouvisMor(){
+        this.name = "Henriette";
+        this.hp = 300;
+        this.BaseDamage = 10;
+        this.CreatureType = "Milf";
     }
 
 
@@ -43,19 +43,16 @@ public class Fred2 implements Datamon{
     }
 
     @Override
-    public int Damagebuff(Datamon target) {
-        return 0;
-    }
-
-    @Override
-    public int takedamage(int damage) {
-        return hp-= damage;
+    public int DamageBuff(Datamon target) {
+        if("Ginger".equals(target.getCreatureType())){
+            return getBaseDamage() +10;
+        } else {
+            return getBaseDamage();
+        }
     }
 
     @Override
     public String introduction() {
-        return  "";
+        return "A hot milf appears in the wild. Her soul is kind, and her smile lights up the world";
     }
-
-
 }

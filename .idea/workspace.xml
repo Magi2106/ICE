@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f774f39f-9bb8-4bf9-bc1c-70bb4423a81e" name="Changes" comment="Removed test class and FXML file.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/BattleSimController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/BattleSimController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/DBConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Fred2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Fred2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Jonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Jonas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/Kevin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/Kevin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/RouvisMor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/Datamons/RouvisMor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/SelectorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/SelectorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ice/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -45,6 +62,7 @@
     "Application.Unnamed.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "småRettelser",
     "ignore.virus.scanning.warn.message": "true",
@@ -70,6 +88,7 @@
       <recent name="$PROJECT_DIR$/Driver" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.ice.Datamons" />
       <recent name="com.example.ice" />
       <recent name="" />
     </key>
@@ -107,7 +126,7 @@
       <workItem from="1702255034933" duration="1110000" />
       <workItem from="1702286073883" duration="273000" />
       <workItem from="1702286383650" duration="333000" />
-      <workItem from="1702288391402" duration="1431000" />
+      <workItem from="1702288391402" duration="6774000" />
     </task>
     <task id="LOCAL-00001" summary="Removed test class and FXML file.">
       <option name="closed" value="true" />
@@ -181,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702289365317</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Removed test class and FXML file.">
+      <option name="closed" value="true" />
+      <created>1702289881736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702289881736</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

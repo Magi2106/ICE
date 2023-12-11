@@ -12,15 +12,18 @@ public class User {
     public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.datamons = datamons;
-
     }
+
     public List<Datamon> getDatamons() {
         return datamons;
     }
 
     public void addDatamon(Datamon mon){
         datamons.add(mon);
+    }
+
+    public void removeDatamon(Datamon mon){
+        datamons.remove(mon);
     }
     public String getUsername() {
         return username;
